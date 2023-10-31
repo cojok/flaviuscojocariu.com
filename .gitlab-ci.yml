@@ -7,6 +7,7 @@ pages:
   script:
     # Specify the steps involved to build your app here
     - npm i -g pnpm
+    - pnpm install
     - pnpm run build
 
   artifacts:
