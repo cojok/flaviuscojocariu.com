@@ -1,0 +1,72 @@
+---
+import {getLang, translate} from "../i18n/";
+const lang = getLang(Astro.url);
+const t = translate(lang);
+---
+
+<section id="about" class="d-flex col-xxl-12 px-1 py-5 justify-content-center section-height">
+    <div class="row flex-fill flex-lg-row align-items-center g-5 py-5">
+        <div class="col-lg-12">
+            <p class="fs-1 mb-3 flex-fill text-warning fw-light text-center section-title">
+                {t('about.title')}
+            </p>
+        </div>
+        <div class="col-10 col-sm-8 col-lg-12 flex-fill">
+            <div class="fs-5 mb-2 flex-fill text-light fw-light text-left">
+                <p>
+                    {t('about.helloThere')}
+                </p>
+
+                <p>
+                    {t('about.paragraph1')}
+                </p>
+
+                <!--<p>-->
+                <!--    More than a decade ago I started my journey into web development, and I've loved every moment of it.-->
+                <!--    From building captivating user interfaces to implementing robust back-end solutions, web development-->
+                <!--    has become both my profession and passion. Over the years, I've had the privilege of working on a-->
+                <!--    variety of projects, from small startups to major corporations, and I've loved every step of the-->
+                <!--    journey.-->
+                <!--</p>-->
+
+                <p>
+                    {t('about.paragraph2')}
+                </p>
+
+                <p>
+                    {t('about.paragraph3')}
+                </p>
+                <p>
+                    {t('about.paragraph4')}
+                </p>
+
+                <p>
+                    {t('about.paragraph5')}
+                </p>
+                <p>
+                    {t('about.letCreate')}
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <style>
+        .section-title {
+            position: relative;
+            padding-bottom: 8px;
+        }
+
+        .section-title::after {
+            position: absolute;
+            margin-left: auto;
+            margin-right: auto;
+            left: 0;
+            right: 0;
+            text-align: center;
+            bottom: 0;
+            width: 5vh;
+            height: 1px;
+            border-bottom: 7px solid #ffcc00;
+            content: "";
+        }
+    </style>

@@ -1,0 +1,20 @@
+---
+import {getLang, translate} from "../i18n";
+const lang = getLang(Astro.url);
+const t = translate(lang);
+const text = t('main') as string;
+const finalText = text.replace('${name}', '<span class="text-danger">Flavius Cojocariu</span>');
+---
+
+<section id="home" class="d-flex col-xxl-12 px-1 py-5 justify-content-center section-height">
+    <div class="row flex-lg-row align-items-center g-5 py-5">
+        <div class="col-lg-6 col-xl-6 col-md-12 col-sm-12">
+            <p class="fs-1 mb-3 text-light fw-light text-center">
+               <Fragment set:html={finalText}/>
+            </p>
+        </div>
+        <div class="col-10 col-sm-8 col-lg-6 d-sm-none d-lg-block">
+            <img src="/assets/developer.svg" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" loading="lazy">
+        </div>
+    </div>
+</section>

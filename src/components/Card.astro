@@ -1,0 +1,74 @@
+---
+interface Props {
+    title: string;
+    body: string;
+    href: string;
+    tags?: string[];
+    bgImg: string;
+}
+
+const {href, title, body, tags = [], bgImg = '/assets/projects-placeholder.jpg'}: Props = Astro.props;
+---
+
+<div class="col">
+    <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4" id="projects-card-container">
+        <div class="card-header d-flex align-items-center flex-column justify-content-center">
+            <img class="card-img-top" src={bgImg} alt={title}>
+        </div>
+        <div class="card-body">
+            <p class="mb-4 card-title">{title}</p>
+            <p class="mb-4 card-text">{body}</p>
+            <ul class="d-flex h-80 list-unstyled mt-auto justify-content-start align-items-center text-warning flex-wrap">
+                {
+                    tags.map(tag => (
+                            <li class="d-flex align-items-center p-1 tags">
+                                #{tag}
+                            </li>
+                    ))
+                }
+            </ul>
+            <a href={href} target="_blank" class="card-link btn text-warning">
+                Check project
+            </a>
+        </div>
+    </div>
+</div>
+
+<style>
+    #projects-card-container {
+        background: transparent !important;
+        color: #f1f2f6 !important;
+        border: 5px solid #ff8900;
+    }
+
+    .tags {
+        font-size: 12px;
+    }
+
+    .card-header {
+        width: 100%;
+        max-height: 180px;
+        min-height: 180px;
+        margin-bottom: 8px;
+        background: #fff;
+        border-bottom: 5px solid #ff8900;
+
+    }
+
+    .card-img-top {
+        width: 80%;
+        max-width: fit-content;
+        max-height: 100%;
+    }
+
+    .card-body {
+        position: relative;
+        min-height: 530px;
+        .card-link {
+            position: absolute;
+            bottom: 12px;
+            right: 12px;
+        }
+    }
+
+</style>

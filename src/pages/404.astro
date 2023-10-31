@@ -1,0 +1,59 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Footer from '../components/Footer.astro';
+import Navbar from '../components/Nav.astro';
+import {getLang, translatedPath} from "../i18n";
+const lang = getLang(Astro.url);
+const path = translatedPath(lang);
+---
+<Layout title="Flavius Cojocariu | Web developer">
+    <Navbar></Navbar>
+    <main class="container">
+        <section class="d-flex justify-content-center col-xxl-12 px-1 py-5 align-items-center flex-column not-found section-height">
+             <p class="not-found_subtitle">Opps Page is not available!</p>
+             <h1 class="error_title">
+               <p>404</p>
+               404
+             </h1>
+             <a href={path('/')} class="btn text-warning">Back to home</a>
+           </section>
+    </main>
+    <Footer></Footer>
+</Layout>
+
+<style>
+ .not-found_subtitle {
+   color: #ff8900;
+   text-transform: uppercase;
+   letter-spacing: 5pt;
+   font-weight: 500;
+   font-size: 0.8rem;
+   margin-bottom: -5em;
+ }
+ .not-found .error_title {
+   --x-shadow: 0;
+   --y-shadow: 0;
+   --x:50%;
+   --y:50%;
+   font-size: 15rem;
+   transition: all 0.2s ease;
+   position: relative;
+   padding: 2rem;
+ }
+ .not-found .error_title:hover {
+   transition: all 0.2s ease;
+   text-shadow: var(--x-shadow) var(--y-shadow) 25px #5b12a4;
+ }
+ .not-found .error_title p {
+   position: absolute;
+   top: 2rem;
+   left: 2rem;
+   background-image: radial-gradient(circle closest-side, rgba(255,204,0,1) 50%, rgba(255,137,0,1) 100%);
+   background-position: var(--x) var(--y);
+   background-repeat: no-repeat;
+   text-shadow: none;
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+   transition: all 0.1s ease;
+ }
+</style>

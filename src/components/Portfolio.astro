@@ -1,0 +1,85 @@
+---
+import Card from './Card.astro';
+import {getLang, translate} from "../i18n/";
+
+const lang = getLang(Astro.url);
+const t = translate(lang);
+
+type portfolioContent = {
+    bgImg?: string;
+    href: string;
+    title: string;
+    body: string;
+    tags?: string[];
+}
+const projects: portfolioContent[] = [
+    {
+        bgImg: '/assets/projects-placeholder.jpg',
+        href: '//github.com/cojok/personal-website',
+        title: 'Static Site Generator',
+        body: 'As a fun project, I decided to dive in a bit more into python. Therefore I have build up a tiny,' +
+            ' simple static site generator.',
+        tags: ['python3', 'markdown', 'npm', 'post-css']
+    },
+    {
+        bgImg: '/assets/projects-placeholder.jpg',
+        href: '//github.com/cojok/personal-website',
+        title: 'New website',
+        body: 'As a fun project, I decided to reshape my personal website. As I always like to learn something new' +
+            ' when I build up stuff, I decided to try out astrojs.',
+        tags: ['astrojs', 'typescript', 'pnpm', 'css']
+    },
+
+]
+---
+
+<section id="projects" class="d-flex col-xxl-12 px-1 py-5 justify-content-center section-height mb-5">
+    <div class="row flex-fill flex-lg-row align-items-center g-5 py-5">
+        <div class="col-lg-12">
+            <p class="fs-1 mb-3 flex-fill text-warning fw-light text-center section-title">
+                {t('projects.title')}
+            </p>
+            <p class="text-light">
+                {t('projects.description')}
+            </p>
+        </div>
+        <div class="col-10 col-sm-8 col-lg-12 flex-fill">
+            <div class="fs-5 mb-2 flex-fill text-light fw-light text-left">
+                <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5 flex-wrap">
+                    {
+                        projects.map((project) => (
+                                <Card
+                                        bgImg={project.bgImg}
+                                        href={project.href}
+                                        title={project.title}
+                                        body={project.body}
+                                        tags={project.tags}
+                                />
+                        ))
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+    .section-title {
+        position: relative;
+        padding-bottom: 8px;
+    }
+
+    .section-title::after {
+        position: absolute;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+        text-align: center;
+        bottom: 0;
+        width: 5vh;
+        height: 1px;
+        border-bottom: 7px solid #ffcc00;
+        content: "";
+    }
+</style>

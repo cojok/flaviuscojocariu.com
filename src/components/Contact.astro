@@ -1,0 +1,54 @@
+---
+import {getLang, translate} from "../i18n/";
+const lang = getLang(Astro.url);
+const t = translate(lang);
+---
+<section id="contact" class="d-flex col-xxl-12 px-1 py-5 justify-content-center section-height mb-5">
+    <div class="row flex-fill flex-lg-row align-items-center g-5 py-5">
+        <div class="col-lg-12">
+            <p class="fs-1 mb-3 flex-fill text-warning fw-light text-center section-title">
+                {t('contact.title')}
+            </p>
+            <div class="fs-5 mb-2 flex-fill text-light fw-light text-left">
+                <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+                    <div class="col d-flex align-items-center flex-column">
+                        <h3 class="fw-bold mb-0 fs-4 text-body-emphasis text-light">{t('contact.phone')}</h3>
+                        <a href="tel: +4915202762116" class="text-light">+49(0)15202762116</a>
+                    </div>
+                    <div class="col d-flex align-items-center flex-column">
+                        <h3 class="fw-bold mb-0 fs-4 text-body-emphasis text-light">{t('contact.email')}</h3>
+                        <a href="mailto: cojokka@gmail.com" class="text-light">cojokka@gmail.com</a>
+                    </div>
+                    <div class="col d-flex align-items-center flex-column">
+                        <h3 class="fw-bold mb-0 fs-4 text-body-emphasis text-light">{t('contact.socialMedia')}</h3>
+                        <div>
+                            <a href="https://www.linkedin.com/in/flavius-cojocariu-4597775a/"><i
+                                    class="text-light bi bi-linkedin fs-3"></i></a>
+                            <a href="https://github.com/cojok"><i class="text-light bi bi-git fs-3"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<style>
+    .section-title {
+        position: relative;
+        padding-bottom: 8px;
+    }
+
+    .section-title::after {
+        position: absolute;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+        text-align: center;
+        bottom: 0;
+        width: 5vh;
+        height: 1px;
+        border-bottom: 7px solid #ffcc00;
+        content: "";
+    }
+</style>

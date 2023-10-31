@@ -1,0 +1,87 @@
+---
+import {getLang, translate,translatedPath} from "../i18n";
+const lang = getLang(Astro.url);
+const t = translate(lang);
+const path = translatedPath(lang);
+const menuItems = [
+    {
+        title: t('nav.about'),
+        path: path('/#about'),
+    },
+    {
+        title: t('nav.services'),
+        path: path('/#services'),
+    },
+    // {
+    //     title: t('nav.projects'),
+    //     path: path('/#projects'),
+    // },
+    {
+        title: t('nav.contact'),
+        path: path('/#contact'),
+    },
+    {
+        title: t('nav.resume'),
+        path: path('/resume'),
+    },
+];
+const {defaultActiveItem} = Astro.props;
+---
+<nav class="navbar navbar-expand-sm navbar-light fixed-top bg-dark" id="navbar">
+    <div class="container-fluid">
+        <a class="navbar-brand text-light d-flex flex-row justify-content-between align-items-center" href={path('/#home')}>
+            <i class="bi bi-terminal fs-2 text-gradient"></i>
+            <span class="fs-5 p-2 text-gradient">Flavius Cojocariu</span>
+        </a>
+        <button class="navbar-toggler hamburger-button border-0" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-list text-light"></i>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+            <ul class="navbar-nav">
+                {
+                    menuItems.map((item) => (
+                            <li class="nav-item">
+                                <a class:list={['nav-link', {
+                                    'text-light': defaultActiveItem !== item.title,
+                                    'active text-warning': defaultActiveItem === item.title
+                                }]} aria-current="page" href={item.path} data-path={item.path}>
+                                    {item.title}
+                                </a>
+                            </li>
+                    ))
+                }
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<script>
+    // const navLink: NodeListOf<Element> = document.querySelectorAll('.navbar .nav-link');
+    // const sections: NodeListOf<Element> = document.querySelectorAll('section[id]');
+    // const hash: string = window.location.hash;
+    // const menuToActivate: Element = document.querySelector(`[data-path="${hash}"]`);
+    // if (menuToActivate) {
+    //     menuToActivate.classList.add('active');
+    //     menuToActivate.classList.add('text-warning');
+    // }
+    // const setActive = (e) => {
+    //     e.stopPropagation();
+    //     const el = e.target;
+    //     navLink.forEach(item => {
+    //         item.classList.remove('active');
+    //     });
+    //     el.classList.add('active');
+    // }
+    // navLink.forEach((item: Element): void => {
+    //     item.addEventListener('click', setActive);
+    // });
+
+</script>
+
+<style>
+    .navbar .nav-link.active {
+        color: #ff8900!important;
+    }
+</style>

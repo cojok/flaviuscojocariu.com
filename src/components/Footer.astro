@@ -1,0 +1,29 @@
+---
+import {AVAILABLE_LANGUAGES, translatedPath} from '../i18n/';
+
+const date: number = (new Date()).getFullYear();
+const languagePicker: Record<string, string>[] = [];
+Object.entries(AVAILABLE_LANGUAGES).map(([lang, label]) => {
+    const path = translatedPath(lang as keyof typeof AVAILABLE_LANGUAGES);
+    const langPath = path('/')
+    languagePicker.push({
+        path: langPath,
+        label,
+    })
+});
+---
+
+<footer class="fixed-bottom d-flex flex-wrap justify-content-center align-items-center py-3 border-top bg-dark">
+    <p class="col-md-6 text-body-secondary text-light">
+        Copyright © {date}. All rights reserved.
+        Made with &#10084; Flavius Cojocariu.
+        Powered by
+        <a href="//astro.build" class="text-light me-2 text-decoration-none">
+            <img src="/assets/astro-logo-light.svg" alt="astro" width="65px" height="auto"/>
+        </a>
+        {languagePicker.map((language) => (
+                <a href={language.path} class="text-light me-2">{language.label}</a>
+        ))}
+    </p>
+
+</footer>

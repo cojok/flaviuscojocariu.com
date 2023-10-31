@@ -1,0 +1,105 @@
+---
+import {getLang} from "../i18n";
+const lang = getLang(Astro.url);
+interface Props {
+    title: string;
+}
+const {title} = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang={lang}>
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="description" content="Astro description">
+    <meta name="viewport" content="width=device-width"/>
+    <link rel="icon" type="image/svg+xml" href="/assets/projects/terminal.svg"/>
+    <meta name="generator" content={Astro.generator}/>
+    <title>{title}</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500&family=Fira+Sans:wght@200;500&family=Inter:wght@200;600&display=swap"
+          rel="stylesheet">
+</head>
+<body class="bg-dark" data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
+<slot/>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+<!--<footer>-->
+<!--	<a href="https://www.freepik.com/free-vector/man-sysadmine-computer-programmer-working-computer_21852411.htm#page=2&query=developer%20male%20web&position=3&from_view=search&track=ais">Image by studio4rt</a> on Freepik-->
+<!--</footer>-->
+</body>
+</html>
+<style is:global>
+    :root {
+        --accent: 136, 58, 234;
+        --accent-light: 224, 204, 250;
+        --accent-dark: 49, 10, 101;
+        --accent-gradient: linear-gradient(45deg, rgb(var(--accent)), rgb(var(--accent-light)) 30%, white 60%);
+    }
+
+    body {
+        font-family: 'Fira Mono', monospace !important;
+        position: relative;
+    }
+
+    code {
+        font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
+        Bitstream Vera Sans Mono, Courier New, monospace;
+    }
+
+    .text-gradient {
+        background-color: rgba(255, 204, 0, 1);
+        background-image: linear-gradient(50deg, rgba(255, 204, 0, 1) 50%, rgba(255, 137, 0, 1) 100%);
+        background-size: 100%;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -moz-background-clip: inherit;
+        -moz-text-fill-color: transparent;
+    }
+
+    .active.text-warning {
+        color: #ffcc00 !important;
+    }
+
+    .text-warning {
+        color: #ffcc00 !important;
+    }
+
+    .text-light {
+        color: #f1f2f6 !important;
+    }
+
+    .text-dark {
+        color: #5b12a4 !important;
+    }
+
+    .text-danger {
+        color: #ff8900 !important;
+    }
+
+    .bg-dark {
+        background: #242a37 !important;
+    }
+
+    .section-height {
+        min-height: 100vh;
+    }
+
+    .btn {
+        padding: 0.8em 1.5em;
+        border-radius: 2em;
+        border: 2px solid #ff8900;
+        text-transform: uppercase;
+        letter-spacing: 1.5pt;
+    }
+
+    .btn:hover {
+        border-color: #ffcc00;
+        color: #ff8900 !important;
+    }
+</style>
