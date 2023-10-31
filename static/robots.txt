@@ -1,0 +1,5 @@
+User-Agent: *
+Allow: /resume
+Allow: /de
+
+Sitemap: sitemap-index.xml

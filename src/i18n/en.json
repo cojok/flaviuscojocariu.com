@@ -51,5 +51,7 @@
   "footer.rights": "All rights reserved",
   "footer.madeBy": "Made with ${icon} by Flavius Cojocariu",
   "footer.poweredBy": "Powered by",
-  "resume.download": "Download Resume in pdf"
+  "resume.download": "Download Resume in pdf",
+  "resume.title": "Resume",
+  "resume.techUsed": "Technologies used"
 }

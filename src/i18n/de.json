@@ -51,5 +51,7 @@
   "footer.rights": "All rights reserved",
   "footer.madeBy": "Made with ${icon} by Flavius Cojocariu",
   "footer.poweredBy": "Powered by",
-  "resume.download": "Lebenslauf herunterladen"
+  "resume.download": "Lebenslauf herunterladen",
+  "resume.title": "Lenbenslauf",
+  "resume.techUsed": "Verwendete Technologien"
 }
