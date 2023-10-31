@@ -1,5 +1,4 @@
-User-Agent: *
-Allow: /resume
-Allow: /de
+User-agent: *
+Allow: /
 
-Sitemap: sitemap-index.xml
+Sitemap: https://flaviuscojocariu.com/sitemap-index.xml
