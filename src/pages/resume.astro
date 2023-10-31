@@ -1,4 +1,5 @@
 ---
+import {getLang, translate} from "../i18n";
 import Layout from '../layouts/Layout.astro';
 import Footer from '../components/Footer.astro';
 import Navbar from '../components/Nav.astro';
@@ -14,6 +15,10 @@ type content = {
     title: string;
     sections: section[];
 }
+
+const lang = getLang(Astro.url);
+const t = translate(lang);
+
 const education: content = {
     title: 'Education',
     sections: [{
@@ -119,6 +124,10 @@ const workExperience: content = {
                     <div class="d-flex flex-column justify-content-center p-5 align-items-center align-self-center col-10">
                         <p class="fs-3 mb-3 text-warning fw-light text-center vh-5 max-vh-5 min-vh-5">
                             {workExperience.title}
+                            <br/>
+                            <a href={`/assets/resume-pdf/flavius_cojocariu_resume_${lang}.pdf`} target="_blank" class="fs-4 ms-2 text-warning">
+                                {t('resume.download')}
+                            </a>
                         </p>
                         <div class="fs-6 timeline-section d-flex flex-column">
                             {

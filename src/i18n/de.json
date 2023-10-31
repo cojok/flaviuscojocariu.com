@@ -50,5 +50,6 @@
   "footer.copyright": "Copyright",
   "footer.rights": "All rights reserved",
   "footer.madeBy": "Made with ${icon} by Flavius Cojocariu",
-  "footer.poweredBy": "Powered by"
+  "footer.poweredBy": "Powered by",
+  "resume.download": "Lebenslauf herunterladen"
 }
