@@ -8,13 +8,26 @@ const finalText = text.replace('${name}', '<span class="text-danger">Flavius Coj
 
 <section id="home" class="d-flex col-xxl-12 px-1 py-5 justify-content-center section-height">
     <div class="row flex-lg-row align-items-center g-5 py-5">
-        <div class="col-lg-6 col-xl-6 col-md-12 col-sm-12">
+        <div class="col-lg-6 col-xl-6 col-md-6 col-sm-12">
             <p class="fs-1 mb-3 text-light fw-light text-center">
-               <Fragment set:html={finalText}/>
+                <Fragment set:html={finalText}/>
             </p>
         </div>
-        <div class="col-10 col-sm-8 col-lg-6 d-sm-none d-lg-block">
-            <img src="/assets/developer.svg" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" loading="lazy">
+        <div class="col-6 col-lg-6 d-none d-md-block">
+            <figure class="figure mx-lg-auto w-100">
+                <img src="/assets/developer.svg" class="figure-img img-fluid rounded" alt="Image by upklyak on Freepik" loading="lazy">
+                <figcaption class="figure-caption text-light text-end">
+                    <a class="text-light text-decoration-none"
+                       href="https://www.freepik.com/free-vector/web-development-concept-with-programmer-ar_35496093.htm#query=developer%20male&position=1&from_view=search&track=ais">
+                        Image by upklyak on Freepik
+                    </a>
+                </figcaption>
+            </figure>
         </div>
     </div>
 </section>
+<style>
+    .figure-caption {
+        font-size: .678em;
+    }
+</style>
