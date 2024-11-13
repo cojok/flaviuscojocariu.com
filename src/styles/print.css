@@ -1,0 +1,63 @@
+body {
+    font-family: 'Fira Sans', sans-serif !important;
+    background-color: #242a37 !important;
+    color: #f1f2f6 !important;
+}
+
+nav {
+    display: none !important;
+}
+
+.container {
+    max-width: 100% !important;
+}
+
+.timeline-section {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 24px !important;
+}
+
+.timeline-item {
+    display: flex !important;
+    align-content: flex-start !important;
+    align-items: flex-start !important;
+    flex-direction: column !important;
+    justify-content: space-between !important;
+    padding: 8px !important;
+}
+
+.timeline-item-header {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 8px !important;
+    margin-bottom: 16px !important;
+}
+
+.timeline-item-header .title {
+    font-size: 1.5rem !important;
+    font-weight: 500 !important;
+    color: #ffcc00 !important;
+}
+
+.timeline-item-header .subtitle {
+    font-size: 1.25rem !important;
+    font-weight: 400 !important;
+    color: #f1f2f6 !important;
+}
+
+.timeline-item-header .date {
+    font-size: 1.25rem !important;
+    font-weight: 400 !important;
+    color: #f1f2f6 !important;
+}
+
+.timeline-item-body {
+    font-size: 1rem !important;
+    line-height: 1.5 !important;
+    color: #f1f2f6 !important;
+}
+
+.d-print-none {
+    display: none !important;
+}

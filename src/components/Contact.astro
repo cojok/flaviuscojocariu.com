@@ -2,6 +2,14 @@
 import {getLang, translate} from "../i18n/";
 const lang = getLang(Astro.url);
 const t = translate(lang);
+const contactDetails: {
+    phone: string;
+    email: string;
+    social?: string;
+} = {
+    phone:  '+49 15202762116',
+    email: 'info@flaviuscjocariu.com'
+}
 ---
 <section id="contact" class="d-flex col-xxl-12 px-1 py-5 justify-content-center section-height mb-5">
     <div class="row flex-fill flex-lg-row align-items-center g-5 py-5">
@@ -13,18 +21,18 @@ const t = translate(lang);
                 <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
                     <div class="col d-flex align-items-center flex-column">
                         <h3 class="fw-bold mb-0 fs-4 text-body-emphasis text-light">{t('contact.phone')}</h3>
-                        <a href="tel: +4915202762116" class="text-light">+49(0)15202762116</a>
+                        <a href={`tel: ${contactDetails.phone}`} class="text-light">{contactDetails.phone}</a>
                     </div>
                     <div class="col d-flex align-items-center flex-column">
                         <h3 class="fw-bold mb-0 fs-4 text-body-emphasis text-light">{t('contact.email')}</h3>
-                        <a href="mailto: cojokka@gmail.com" class="text-light">cojokka@gmail.com</a>
+                        <a href={`mailto: ${contactDetails.email}` } class="text-light">{contactDetails.email}</a>
                     </div>
                     <div class="col d-flex align-items-center flex-column">
                         <h3 class="fw-bold mb-0 fs-4 text-body-emphasis text-light">{t('contact.socialMedia')}</h3>
                         <div>
-                            <a href="https://www.linkedin.com/in/flavius-cojocariu-4597775a/"><i
+                            <a href="https://www.linkedin.com/in/flavius-cojocariu-4597775a/" class="px-3"><i
                                     class="text-light bi bi-linkedin fs-3"></i></a>
-                            <a href="https://github.com/cojok"><i class="text-light bi bi-git fs-3"></i></a>
+                            <a href="https://github.com/cojok" class="ps-3"><i class="text-light bi bi-git fs-3"></i></a>
                         </div>
                     </div>
                 </div>

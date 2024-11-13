@@ -4,49 +4,146 @@
   "nav.projects": "Projects",
   "nav.contact": "Contact",
   "nav.resume": "Resume",
-  "main": "Hello there! My name is ${name} and I am a web developer based in München.",
+  "main": "Hi, I’m ${name}, Engineering Manager and Web Developer based in Munich.",
+  "main.tagline": "Building Teams, Crafting Solutions",
   "about.title": "About me",
   "about.helloThere": "Hello there!",
-  "about.paragraph1": "I'm so glad you dropped by. I'm Flavius Cojocariu, a friendly and experienced Software Engineer, based in München, Germany, with a keen focus on crafting amazing web experiences. I believe in embracing life's adventures and constantly seeking opportunities to grow and learn. Let's dive into my story!",
-  "about.paragraph2": "My work philosophy revolves around constant growth and innovation. I believe that staying curious and adaptable is crucial in an ever-evolving landscape. Through each project, I aim to deliver not just results but also meaningful experiences that resonate with audiences and clients alike.",
-  "about.paragraph3": "Throughout my career, I've been fortunate enough to contribute to some pretty fantastic projects. From responsive websites that adapt like chameleons to web applications with seamless user experiences, I take immense pride in every line of code I write. Some of the companies I have worked for, are part of IoT/fintech industry, travel industry and even telecom and market research.",
-  "about.paragraph4": "I'm excited about the future and the possibilities it holds. I'm open to new collaborations, challenges, and endeavors that push the boundaries of creativity and innovation.",
+  "about.paragraph1": "I’m Flavius Cojocariu, a Software Engineer and Engineering Manager based in Munich, Germany, passionate about creating impactful web experiences. With over a decade of experience, I specialize in scalable, user-focused solutions across sectors like edtech, IoT, fintech, travel, telecom, and market research, with a strong background in SaaS products.",
+  "about.paragraph2": "I believe in continuous growth, adaptability, and the power of innovation. Each project is an opportunity not just to deliver results but to create meaningful experiences that resonate with clients and their users. Staying curious and pushing boundaries has always been central to my approach.",
+  "about.paragraph3": "Throughout my career, I’ve had the privilege of leading and contributing to projects that emphasize seamless, responsive web experiences and robust, scalable solutions. Currently, as an Engineering Manager in the edtech sector, I’m leading a talented team to drive innovation and support the digital transformation of education. In previous roles, my work with SaaS products involved helping companies refine their offerings and expand their engineering teams, aligning technology with business growth.",
+  "about.paragraph4": "I’m excited about new challenges, collaborations, and creative endeavors that push the limits of web development. If you’re interested in discussing a project or simply want to connect, feel free to reach out.",
   "about.paragraph5": "Thank you for taking the time to explore my portfolio. If you have any questions, want to discuss potential projects, or simply want to connect, don't hesitate to reach out.",
   "about.letCreate": "Let's create something remarkable together!",
   "services.title": "Services",
-  "services.frontend.title": "Fronted development",
+  "services.frontend.title": "Frontend Development",
+  "services.frontend.description": "Creating scalable, responsive, and user-centered interfaces for web applications",
   "services.frontend.content": [
-    "UI/UX implementation",
-    "Architecture definition",
-    "Web Components",
-    "Microfrontends concept"
+    "<span class=\"fw-bold\">UI/UX Implementation</span>: Engaging and functional user interfaces.",
+    "<span class=\"fw-bold\">Architecture Definition</span>: Structuring for scalability and maintainability.",
+    "<span class=\"fw-bold\">Component-Based Development</span>: Reusable components and microfrontends.",
+    "<span class=\"fw-bold\">Core Technology</span>: TypeScript for clean, efficient code."
   ],
   "services.backend.title": "Backend development",
+  "service.backend.description": "Building robust, scalable backend architectures tailored for business growth.",
   "services.backend.content": [
-    "API design",
-    "API implementation",
-    "Microservices",
-    "Event Driven",
-    "SQL/NoSQL dbs",
-    "Architecture definition",
-    "CI/CD",
-    "System design",
-    "E-commerce"
+    "<span class=\"fw-bold\">API Design & Implementation</span>: Crafting RESTful APIs for seamless communication.",
+    "<span class=\"fw-bold\">Microservices Architecture</span>: Modular systems that scale easily.",
+    "<span class=\"fw-bold\">Event-Driven Systems</span>: Real-time data processing for responsive applications.",
+    "<span class=\"fw-bold\">Data Management</span>: SQL/NoSQL for secure, efficient data handling.",
+   "<span class=\"fw-bold\">CI/CD & System Design</span>: Streamlining deployments and ensuring fast, reliable releases."
   ],
-  "services.consultancy.title": "Consultancy",
+  "services.consultancy.title": "Consulting",
+  "services.consultancy.description": "Expert guidance on digital transformation, team growth, and product strategies.",
   "services.consultancy.content": [
-    "Digitization support",
-    "Process support",
-    "Team development",
-    "E-commerce support",
-    "SaaS support"
+    "<span class=\"fw-bold\">Digital Transformation</span>: Helping companies adopt digital solutions effectively.",
+    "<span class=\"fw-bold\">Team Leadership & Development</span>: Leveraging experience in building high-performing teams.",
+    "<span class=\"fw-bold\">Product Strategy & Growth</span>: Aligning technical direction with business objectives.",
+    "<span class=\"fw-bold\">Industry Insight</span>: Specialized knowledge across SaaS, e-commerce, edtech, IoT, and fintech."
   ],
-  "projects.title": "Projects",
-  "projects.description": "In my portfolio, you'll find a curated selection of my best work, showcasing my ability my ability to craft dynamic and user-friendly web applications that seamlessly blend creativity with cutting-edge technologies. Each project reflects my commitment to excellence and a keen eye for detail.",
+  "projects.title": "Portfolio Highlights",
+  "projects.description": "In my portfolio highlights, you’ll find a curated selection of key projects that showcase my ability to develop dynamic, user-centered web applications. Each project demonstrates my commitment to excellence, combining creativity with advanced technologies. For an in-depth look at my work and experience, explore the full details on my resume.",
+  "projects.list": [
+    {
+      "href": "/resume#iu-group-em",
+      "title": "Engineering Manager | IU Group, Munich, Germany (Jan 2024 - Present)",
+      "body": "<span class=\"fw-bold\">Lead</span> a team of <span class=\"fw-bold\">6 engineers</span> with a focus on <span class=\"fw-bold\">code reviews</span>, <span class=\"fw-bold\">small development tasks</span>, and <span class=\"fw-bold\">pair programming</span> for configuration support. Oversee <span class=\"fw-bold\">collaboration across clusters</span> and engage in <span class=\"fw-bold\">strategic planning</span> with the Product Owner team, implementing <span class=\"fw-bold\">OKR-driven processes</span>. <span class=\"fw-bold\">Restructure team workflows</span> by introducing a sprint process combining <span class=\"fw-bold\">XP and Scrum</span>. Conduct <span class=\"fw-bold\">1-on-1 meetings</span> for team development, handle <span class=\"fw-bold\">hiring and onboarding</span>, and monitor <span class=\"fw-bold\">DORA metrics</span> to enhance performance. Work closely with the <span class=\"fw-bold\">Head of Engineering</span> on strategic and technical projects.",
+      "tags": ["TypeScript", "NestJS", "Mongoose", "Docker", "MySQL", "MongoDB", "Vue.js v3", "Node.js", "CI/CD", "GitLab CI/CD", "DORA Metrics", "Agile"]
+    },
+    {
+      "href": "/resume#remberg-sswe",
+      "title": "Senior Software Engineer | remberg GmbH, Munich, Germany (Jan 2022 - Dec 2023)",
+      "body": "Played a key role in <span class=\"fw-bold\">architectural decision-making</span> and led code refactoring efforts, transitioning backend features to <span class=\"fw-bold\">NestJS</span> for improved code quality. Served as lead developer on two major projects, including migrating email functionality from Mailgun to AWS SES and enhancing file management with a new folder structure. Actively participated in <span class=\"fw-bold\">hiring and onboarding</span>, conducting technical interviews and guiding new team members in software architecture.",
+      "tags": [
+        "TypeScript",
+        "NestJS",
+        "ExpressJS",
+        "Angular (v14+)",
+        "NxJs",
+        "MongoDB",
+        "Docker",
+        "OpenAPI",
+        "Jest",
+        "CypressJS",
+        "SCSS",
+        "Agile",
+        "GitLab CI/CD"
+      ]
+    },
+    {
+      "href": "/resume#ryd-swe-lbe",
+      "title": "Software Engineer - Lead Backend Engineer | ThinxNet GmbH, Munich, Germany (June 2019 - Dec 2021)",
+      "body": "Led backend development, advancing the <span class=\"fw-bold\">API-Gateway</span> and <span class=\"fw-bold\">transitioning monolithic features to microservices</span>. <span class=\"fw-bold\">Built and managed</span> a backend team of 5, actively hiring, onboarding, and mentoring team members. <span class=\"fw-bold\">Collaborated with Product Owners and the Head of Software</span> to meet <span class=\"fw-bold\">sprint goals</span>, implemented <span class=\"fw-bold\">MVPs</span>, and guided the team through <span class=\"fw-bold\">technical challenges</span>.",
+      "tags": [
+        "JavaScript",
+        "TypeScript",
+        "Node.js",
+        "Express",
+        "NestJS",
+        "MongoDB",
+        "PostgreSQL",
+        "Redis",
+        "RabbitMQ",
+        "Kafka",
+        "Docker",
+        "Agile",
+        "GitLab CI/CD"
+      ]
+    },
+    {
+      "href": "/resume#travador-fwd",
+      "title": "Fullstack Web Developer | Travador GmbH, Munich, Germany (Nov 2016 - May 2019)",
+      "body": "Collaborated with design teams to develop new features and UI components, performed daily maintenance and refactoring, and led the planning of enhancements for the <span class=\"fw-bold\">booking platform and website</span>. Contributed to full-stack microservices development.",
+      "tags": [
+        "HTML5(Twig, EJS)",
+        "CSS3 (SCSS)",
+        "JavaScript (ES6, Vue.js, jQuery, AngularJS, Node.js)",
+        "CakePHP",
+        "Laravel",
+        "Lumen",
+        "MySQL",
+        "AWS (Lambda, S3, CloudFront)",
+        "Agile",
+        "Git"
+      ]
+    },
+    {
+      "href": "/resume#smal-wd",
+      "title": "Web Developer | SMAL GmbH (formerly Ziba Design), Munich, Germany (Feb 2015 - Oct 2016)",
+      "body": "Developed responsive prototypes and web applications, contributing to both <span class=\"fw-bold\">client planning sessions and technical discussions</span> to ensure alignment with project goals. Maintained high code quality through thorough code reviews.",
+      "tags": [
+        "HTML5",
+        "CSS3 (LESS/SASS)",
+        "JavaScript",
+        "jQuery",
+        "AngularJS",
+        "PHP (CakePHP)",
+        "MySQL",
+        "Drupal (frontend)"
+      ]
+    },
+    {
+      "href": "/resume#de-ro-wd",
+      "title": "Web Developer | Multiple Employers, Germany & Romania (April 2012 - February 2015)",
+      "body": "Contributed to diverse projects across various industries, focusing on <span class=\"fw-bold\">white-label product implementations, responsive web design, and hybrid mobile applications</span>. Highlights include creating a knowledge base for code snippets, modernizing online questionnaires, and teaching HTML/CSS basics to team members.",
+      "tags": [
+        "PHP",
+        "MySQL",
+        "JavaScript",
+        "jQuery",
+        "HTML",
+        "CSS3",
+        "Ionic",
+        "SASS",
+        "Bootstrap",
+        "Git"
+      ]
+    }
+  ],
   "contact.title": "Contact",
   "contact.phone": "Phone",
   "contact.email": "Email",
   "contact.socialMedia": "Social Media",
+  "contact.to.btn": "Contact Me",
   "footer.copyright": "Copyright",
   "footer.rights": "All rights reserved",
   "footer.madeBy": "Made with ${icon} by Flavius Cojocariu",

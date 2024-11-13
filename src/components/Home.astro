@@ -2,22 +2,23 @@
 import {getLang, translate} from "../i18n";
 const lang = getLang(Astro.url);
 const t = translate(lang);
-const text = t('main') as string;
-const finalText = text.replace('${name}', '<span class="text-danger">Flavius Cojocariu</span>');
+const main = t('main') as string;
+const tagline = t('main.tagline') as string;
+const mainFinal = main.replace('${name}', '<span class="text-danger">Flavius Cojocariu</span>');
 ---
 
 <section id="home" class="d-flex col-xxl-12 px-1 py-5 justify-content-center section-height">
     <div class="row flex-lg-row align-items-center g-5 py-5">
-        <div class="col-lg-6 col-xl-6 col-md-6 col-sm-12">
-            <p class="fs-1 mb-3 text-light fw-light text-center">
-                <Fragment set:html={finalText}/>
-            </p>
+        <div class="col-lg-7 col-xl-7 col-md-7 col-sm-12">
+            <p class="fs-1 mb-3 text-light fw-bold text-center" set:html={mainFinal}></p>
+            <p class="fs-3 mb-3 text-light fw-light fst-italic text-center" set:html={tagline}></p>
         </div>
-        <div class="col-6 col-lg-6 d-none d-md-block">
+        <div class="col-5 col-lg-5 d-none d-md-block">
             <figure class="figure mx-lg-auto w-100">
-                <img src="/assets/developer.svg" class="figure-img img-fluid rounded" alt="Image by upklyak on Freepik" loading="lazy">
+                <img src="/assets/developer.svg" class="img-fluid" alt="Image by upklyak on Freepik"
+                     loading="lazy">
                 <figcaption class="figure-caption text-light text-end">
-                    <a class="text-light text-decoration-none"
+                    <a target="_blank" class="text-light text-decoration-none"
                        href="https://www.freepik.com/free-vector/web-development-concept-with-programmer-ar_35496093.htm#query=developer%20male&position=1&from_view=search&track=ais">
                         Image by upklyak on Freepik
                     </a>

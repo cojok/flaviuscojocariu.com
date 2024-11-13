@@ -4,49 +4,140 @@
   "nav.projects": "Projekte",
   "nav.contact": "Kontakt",
   "nav.resume": "Lebenslauf",
-  "main": "Hallo zusammen! Mein Name ist ${name} und ich bin ein Webentwickler aus München.",
+  "main": "Hallo, ich bin ${name}, Engineering Manager und Webentwickler aus München.",
+  "main.tagline": "Teams aufbauen, Lösungen gestalten",
   "about.title": "Über mich",
   "about.helloThere": "Hallo zusammen!",
-  "about.paragraph1": "Schön, dass Sie hier vorbeischauen. Ich bin Flavius Cojocariu, ein freundlicher und erfahrener Softwareentwickler mit Sitz in München, Deutschland, der sich darauf konzentriert, erstaunliche Web-Erlebnisse zu entwickeln. Ich glaube daran, die Abenteuer des Lebens anzunehmen und ständig nach Möglichkeiten zu suchen, zu wachsen und zu lernen. Lassen Sie uns in meine Geschichte eintauchen!",
-  "about.paragraph2": "Meine Arbeitsphilosophie dreht sich um ständiges Wachstum und Innovation. Ich glaube, dass es in einer sich ständig weiterentwickelnden Landschaft entscheidend ist, neugierig und anpassungsfähig zu bleiben. Bei jedem Projekt möchte ich nicht nur Ergebnisse liefern, sondern auch sinnvolle Erfahrungen, die bei Publikum und Kunden gleichermaßen ankommen.",
-  "about.paragraph3": "Im Laufe meiner Karriere hatte ich das Glück, an einigen ziemlich fantastischen Projekten mitzuwirken. Von responsiven Websites, die sich wie Chamäleons anpassen, bis hin zu Webanwendungen mit nahtlosem Benutzererlebnis - ich bin sehr stolz auf jede Zeile Code, die ich schreibe. Einige der Unternehmen, für die ich gearbeitet habe, sind Teil der IoT-/Fintech-Branche, der Reisebranche und sogar der Telekommunikation und Marktforschung.",
+  "about.paragraph1": "Ich bin Flavius Cojocariu, Software-Ingenieur und Engineering Manager in München, Deutschland, und habe eine Leidenschaft für die Entwicklung eindrucksvoller Web-Erlebnisse. Mit mehr als einem Jahrzehnt Erfahrung habe ich mich auf skalierbare, nutzerorientierte Lösungen in Bereichen wie Edtech, IoT, Fintech, Reisen, Telekommunikation und Marktforschung spezialisiert, mit einem starken Hintergrund in SaaS-Produkten.",
+  "about.paragraph2": "Ich glaube an kontinuierliches Wachstum, Anpassungsfähigkeit und die Kraft der Innovation. Jedes Projekt ist eine Gelegenheit, nicht nur Ergebnisse zu liefern, sondern sinnvolle Erfahrungen zu schaffen, die bei Kunden und ihren Nutzern Anklang finden. Neugierig zu bleiben und Grenzen zu verschieben, war schon immer ein zentraler Bestandteil meines Ansatzes.",
+  "about.paragraph3": "Im Laufe meiner Karriere hatte ich das Privileg, Projekte zu leiten und zu ihnen beizutragen, bei denen nahtlose, reaktionsfähige Web-Erlebnisse und robuste, skalierbare Lösungen im Vordergrund stehen. Derzeit leite ich als Engineering Manager in der Bildungsbranche ein talentiertes Team, um Innovationen voranzutreiben und die digitale Transformation der Bildung zu unterstützen. In früheren Positionen habe ich Unternehmen bei SaaS-Produkten geholfen, ihre Angebote zu verfeinern und ihre Ingenieurteams zu erweitern, um die Technologie mit dem Geschäftswachstum in Einklang zu bringen.",
   "about.paragraph4": "Ich bin gespannt auf die Zukunft und die Möglichkeiten, die sie bietet. Ich bin offen für neue Kooperationen, Herausforderungen und Unternehmungen, die die Grenzen von Kreativität und Innovation erweitern.",
   "about.paragraph5": "Vielen Dank, dass Sie sich die Zeit genommen haben, mein Portfolio zu erkunden. Wenn Sie Fragen haben, mögliche Projekte besprechen oder einfach nur Kontakt aufnehmen möchten, zögern Sie nicht, mich zu kontaktieren.",
   "about.letCreate": "Lassen Sie uns gemeinsam etwas Außergewöhnliches schaffen!",
   "services.title": "Leistungen",
   "services.frontend.title": "Fronted entwicklung",
+  "services.frontend.description": "Erstellung skalierbarer, responsiver und benutzerzentrierter Oberflächen für Webanwendungen.",
   "services.frontend.content": [
-    "UI/UX implementation",
-    "Architecture definition",
-    "Web Components",
-    "Microfrontends concept"
+    "<span class=\"fw-bold\">UI/UX-Implementierung</span>: Ansprechende und funktionale Benutzeroberflächen.",
+    "<span class=\"fw-bold\">Architektur-Definition</span>: Strukturen für Skalierbarkeit und Wartbarkeit.",
+    "<span class=\"fw-bold\">Komponentenbasierte Entwicklung</span>: Wiederverwendbare Komponenten und Microfrontends.",
+    "<span class=\"fw-bold\">Kerntechnologie</span>: TypeScript für sauberen, effizienten Code."
   ],
   "services.backend.title": "Backend entwicklung",
+  "service.backend.description": "Entwicklung robuster, skalierbarer Backend-Architekturen, die auf Unternehmenswachstum ausgerichtet sind.",
   "services.backend.content": [
-    "API design",
-    "API implementation",
-    "Microservices",
-    "Event Driven",
-    "SQL/NoSQL dbs",
-    "Architecture definition",
-    "CI/CD",
-    "System design",
-    "E-commerce"
+    "<span class=\"fw-bold\">API-Design & Implementierung</span>: Entwicklung von RESTful-APIs für nahtlose Kommunikation.",
+    "<span class=\"fw-bold\">Microservices-Architektur</span>: Modulare Systeme, die sich einfach skalieren lassen.",
+    "<span class=\"fw-bold\">Ereignisgesteuerte Systeme</span>: Echtzeit-Datenverarbeitung für reaktionsfähige Anwendungen.",
+    "<span class=\"fw-bold\">Datenmanagement</span>: SQL/NoSQL für sichere und effiziente Datenverarbeitung.",
+    "<span class=\"fw-bold\">CI/CD & Systemdesign</span>: Optimierung von Deployments für schnelle und zuverlässige Releases."
   ],
   "services.consultancy.title": "Beratung",
+  "services.consultancy.description": "Fachkundige Beratung bei digitaler Transformation, Teamentwicklung und Produktstrategien.",
   "services.consultancy.content": [
-    "Digitalisierungsunterstützung",
-    "Prozessunterstützung",
-    "Team Aufbau",
-    "Unterstützung für E-Commerce",
-    "Unterstüzung für SaaS"
+    "<span class=\"fw-bold\">Digitale Transformation</span>: Unterstützung von Unternehmen bei der effektiven Einführung digitaler Lösungen.",
+    "<span class=\"fw-bold\">Teamführung & -entwicklung</span>: Erfahrung im Aufbau leistungsstarker Teams nutzen.",
+    "<span class=\"fw-bold\">Produktstrategie & Wachstum</span>: Ausrichtung der technischen Richtung an den Unternehmenszielen.",
+    "<span class=\"fw-bold\">Brancheneinblicke</span>: Spezielles Wissen in den Bereichen SaaS, E-Commerce, EdTech, IoT und FinTech."
   ],
   "projects.title": "Projects",
   "projects.description": "In meinem Portfolio finden Sie eine Auswahl meiner besten Arbeiten, die meine Fähigkeit unter Beweis stellen, dynamische und benutzerfreundliche Webanwendungen zu entwickeln, die Kreativität und modernste Technologien nahtlos miteinander verbinden. Jedes Projekt spiegelt mein Engagement für hervorragende Leistungen und mein Auge für Details wider.",
+  "projects.list": [
+    {
+      "href": "/de/resume#remberg-sswe",
+      "title": "Senior Software Engineer | remberg GmbH, Munich, Germany (Jan 2022 - Dec 2023)",
+      "body": "Spielte eine wichtige Rolle bei der <span class=\"fw-bold\">architektonischen Entscheidungsfindung</span> und leitete die Code-Refaktorisierung, um Backend-Funktionen auf <span class=\"fw-bold\">NestJS</span> umzustellen und die Codequalität zu verbessern. War als Lead-Entwickler an zwei bedeutenden Projekten beteiligt, darunter die Migration der E-Mail-Funktionalität von Mailgun zu AWS SES und die Erweiterung der Dateiverwaltung mit einer neuen Ordnerstruktur. Nahm aktiv an der <span class=\"fw-bold\">Einstellung und Einarbeitung</span> teil, führte technische Interviews durch und unterstützte neue Teammitglieder beim Einstieg in die Softwarearchitektur.",
+      "tags": [
+        "TypeScript",
+        "NestJS",
+        "ExpressJS",
+        "Angular (v14+)",
+        "NxJs",
+        "MongoDB",
+        "Docker",
+        "OpenAPI",
+        "Jest",
+        "CypressJS",
+        "SCSS",
+        "Agile",
+        "GitLab CI/CD"
+      ]
+    },
+    {
+      "href": "/de/resume#ryd-swe-lbe",
+      "title": "Software Engineer - Lead Backend Engineer | ThinxNet GmbH, Munich, Germany (June 2019 - Dec 2021)",
+      "body": "Leitete die Backend-Entwicklung, erweiterte das <span class=\"fw-bold\">API-Gateway</span> und <span class=\"fw-bold\">überführte monolithische Funktionen in Microservices</span>. <span class=\"fw-bold\">Baute und leitete</span> ein Backend-Team von 5 Personen, einschließlich der aktiven Einstellung, Einarbeitung und Mentoring der Teammitglieder. <span class=\"fw-bold\">Arbeitete mit Product Owners und dem Head of Software zusammen</span>, um <span class=\"fw-bold\">Sprint-Ziele</span> zu erreichen, setzte <span class=\"fw-bold\">MVPs</span> um und führte das Team durch <span class=\"fw-bold\">technische Herausforderungen</span>.",
+      "tags": [
+        "JavaScript",
+        "TypeScript",
+        "Node.js",
+        "Express",
+        "NestJS",
+        "MongoDB",
+        "PostgreSQL",
+        "Redis",
+        "RabbitMQ",
+        "Kafka",
+        "Docker",
+        "Agile",
+        "GitLab CI/CD"
+      ]
+    },
+    {
+      "href": "/de/resume#travador-fwd",
+      "title": "Fullstack Web Developer | Travador GmbH, Munich, Germany (Nov 2016 - May 2019)",
+      "body": "Arbeitete mit Design-Teams zusammen, um neue Funktionen und UI-Komponenten zu entwickeln, führte tägliche Wartung und Refaktorierung durch und leitete die Planung von Verbesserungen für die <span class=\"fw-bold\">Buchungsplattform und Website</span>. Leistete einen Beitrag zur Full-Stack-Entwicklung von Microservices.",
+      "tags": [
+        "HTML5(Twig, EJS)",
+        "CSS3 (SCSS)",
+        "JavaScript (ES6, Vue.js, jQuery, AngularJS, Node.js)",
+        "CakePHP",
+        "Laravel",
+        "Lumen",
+        "MySQL",
+        "AWS (Lambda, S3, CloudFront)",
+        "Agile",
+        "Git"
+      ]
+    },
+    {
+      "href": "/de/resume#smal-wd",
+      "title": "Web Developer | SMAL GmbH (formerly Ziba Design), Munich, Germany (Feb 2015 - Oct 2016)",
+      "body": "Entwickelte responsive Prototypen und Webanwendungen und nahm an <span class=\"fw-bold\">Kundenplanungssitzungen und technischen Diskussionen</span> teil, um sicherzustellen, dass die Projektziele erreicht werden. Sicherte eine hohe Codequalität durch gründliche Code-Reviews.",
+      "tags": [
+        "HTML5",
+        "CSS3 (LESS/SASS)",
+        "JavaScript",
+        "jQuery",
+        "AngularJS",
+        "PHP (CakePHP)",
+        "MySQL",
+        "Drupal (frontend)"
+      ]
+    },
+    {
+      "href": "/de/resume#de-ro-wd",
+      "title": "Web Developer | Multiple Employers, Germany & Romania (April 2012 - February 2015)",
+      "body": "Arbeitete an verschiedenen Projekten in unterschiedlichen Branchen und konzentrierte sich auf <span class=\"fw-bold\">White-Label-Produktimplementierungen, responsives Webdesign und hybride mobile Anwendungen</span>. Zu den Highlights zählen die Erstellung einer Wissensdatenbank für Code-Snippets, die Modernisierung von Online-Fragebögen und das Unterrichten von HTML/CSS-Grundlagen für Teammitglieder.\n",
+      "tags": [
+        "PHP",
+        "MySQL",
+        "JavaScript",
+        "jQuery",
+        "HTML",
+        "CSS3",
+        "Ionic",
+        "SASS",
+        "Bootstrap",
+        "Git"
+      ]
+    }
+  ],
   "contact.title": "Kontakt",
   "contact.phone": "Handy",
   "contact.email": "E-Mail",
   "contact.socialMedia": "Soziale Medien",
+  "contact.to.btn": "Kontakt aufnehmen",
   "footer.copyright": "Copyright",
   "footer.rights": "All rights reserved",
   "footer.madeBy": "Made with ${icon} by Flavius Cojocariu",
