@@ -12,24 +12,15 @@ type portfolioContent = {
     body: string;
     tags?: string[];
 }
+const projectsList: portfolioContent[] = t('projects.list') as portfolioContent[];
 const projects: portfolioContent[] = [
     {
-        bgImg: '/assets/projects-placeholder.jpg',
         href: '//github.com/cojok/personal-website',
-        title: 'Static Site Generator',
-        body: 'As a fun project, I decided to dive in a bit more into python. Therefore I have build up a tiny,' +
-            ' simple static site generator.',
-        tags: ['python3', 'markdown', 'npm', 'post-css']
+        title: 'Engineering Manager | IU Group, Munich, Germany (Jan 2024 - Present)',
+        body: '<span class="fw-bold">Lead</span> a team of <span class="fw-bold">6 engineers</span> with a focus on <span class="fw-bold">code reviews</span>, <span class="fw-bold">small development tasks</span>, and <span class="fw-bold">pair programming</span> for configuration support. Oversee <span class="fw-bold">collaboration across clusters</span> and engage in <span class="fw-bold">strategic planning</span> with the Product Owner team, implementing <span class="fw-bold">OKR-driven processes</span>. <span class="fw-bold">Restructure team workflows</span> by introducing a sprint process combining <span class="fw-bold">XP and Scrum</span>. Conduct <span class="fw-bold">1-on-1 meetings</span> for team development, handle <span class="fw-bold">hiring and onboarding</span>, and monitor <span class="fw-bold">DORA metrics</span> to enhance performance. Work closely with the <span class="fw-bold">Head of Engineering</span> on strategic and technical projects.',
+        tags: ["TypeScript", "NestJS", "Mongoose", "Docker", "MySQL", "MongoDB", "Vue.js v3", "Node.js", "CI/CD", "GitLab CI/CD", "DORA Metrics", "Agile"]
     },
-    {
-        bgImg: '/assets/projects-placeholder.jpg',
-        href: '//github.com/cojok/personal-website',
-        title: 'New website',
-        body: 'As a fun project, I decided to reshape my personal website. As I always like to learn something new' +
-            ' when I build up stuff, I decided to try out astrojs.',
-        tags: ['astrojs', 'typescript', 'pnpm', 'css']
-    },
-
+    ...projectsList,
 ]
 ---
 
@@ -82,4 +73,5 @@ const projects: portfolioContent[] = [
         border-bottom: 7px solid #ffcc00;
         content: "";
     }
+
 </style>

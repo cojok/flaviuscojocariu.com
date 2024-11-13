@@ -11,18 +11,15 @@ const {href, title, body, tags = [], bgImg = '/assets/projects-placeholder.jpg'}
 ---
 
 <div class="col">
-    <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4" id="projects-card-container">
-        <div class="card-header d-flex align-items-center flex-column justify-content-center">
-            <img class="card-img-top" src={bgImg} alt={title}>
-        </div>
-        <div class="card-body">
-            <p class="mb-4 card-title">{title}</p>
-            <p class="mb-4 card-text">{body}</p>
-            <ul class="d-flex h-80 list-unstyled mt-auto justify-content-start align-items-center text-warning flex-wrap">
+    <div class="card card-cover h-100 overflow-hidden dark-mode-card rounded-4" id="projects-card-container">
+        <div class="card-body d-flex flex-column">
+            <p class="mb-4 card-title" set:html={title}></p>
+            <p class="mb-4 card-text mb-auto" set:html={body}></p>
+            <ul class="d-flex h-80 list-unstyled mt-3 justify-content-start align-items-center text-warning flex-wrap mb-3">
                 {
                     tags.map(tag => (
-                            <li class="d-flex align-items-center p-1 tags">
-                                #{tag}
+                            <li class="d-flex align-items-center p-1 badge bg-secondary me-1 mb-2 text-truncate text-dark" role="button" style="max-width: 150px" title={tag}>
+                                {tag}
                             </li>
                     ))
                 }
@@ -38,7 +35,7 @@ const {href, title, body, tags = [], bgImg = '/assets/projects-placeholder.jpg'}
     #projects-card-container {
         background: transparent !important;
         color: #f1f2f6 !important;
-        border: 5px solid #ff8900;
+        border: 1px solid #f1f2f6!important;
     }
 
     .tags {
@@ -50,25 +47,35 @@ const {href, title, body, tags = [], bgImg = '/assets/projects-placeholder.jpg'}
         max-height: 180px;
         min-height: 180px;
         margin-bottom: 8px;
-        background: #fff;
-        border-bottom: 5px solid #ff8900;
-
+        background: #f1f2f6;
+        border-bottom: 3px solid #ff8900;
     }
 
     .card-img-top {
         width: 80%;
-        max-width: fit-content;
         max-height: 100%;
+        min-width: 80%;
+        min-height: 100%;
+        height: auto;
+        object-fit: contain;
     }
 
-    .card-body {
-        position: relative;
-        min-height: 530px;
-        .card-link {
-            position: absolute;
-            bottom: 12px;
-            right: 12px;
-        }
+    .dark-mode-card {
+        background-color: #242a37 !important;
+        border-color: #FF8900 !important;
+    }
+
+    .dark-mode-card .card-title {
+        color: #FF8900 !important;
+    }
+
+    .dark-mode-card .card-text {
+        color: #f1f2f6 !important;
+    }
+
+    .dark-mode-card .btn-primary {
+        background-color: #ffcc00 !important;
+        color: #242a37 !important;
     }
 
 </style>

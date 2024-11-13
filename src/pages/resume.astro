@@ -4,6 +4,7 @@ import Layout from '../layouts/Layout.astro';
 import Footer from '../components/Footer.astro';
 import Navbar from '../components/Nav.astro';
 type section = {
+    id: string,
     title: string;
     year: string;
     employer: string;
@@ -22,6 +23,7 @@ const t = translate(lang);
 const education: content = {
     title: 'Education',
     sections: [{
+        id: 'wu-tm-edu',
         title: 'Computer Science Studies',
         employer: 'West University, Timisoara, Romania',
         year: '2009-2012',
@@ -33,9 +35,33 @@ const workExperience: content = {
     title: 'Work Experience',
     sections: [
         {
+            id: 'iu-group-em',
+            title: 'Engineering Manager',
+            employer: 'IU Group, München, Germany',
+            year: 'January, 2024 - Present',
+            bodyList: [
+                'Conducting <span class="fw-bold">code reviews</span>, <span class="fw-bold">small development tasks</span>, and <span class="fw-bold">pair programming</span> to support the team with minor fixes or configurations.',
+                'Facilitating <span class="fw-bold">collaboration and communication</span> with product and business teams to ensure alignment on priorities and goals.',
+                'Coordinating <span class="fw-bold">cross-cluster alignments</span> and engaging in <span class="fw-bold">strategic planning</span> with the Product Owner team, working within an <span class="fw-bold">OKR-driven</span> framework.',
+                '<span class="fw-bold">Restructuring team processes and organization</span> by implementing a tailored sprint process that combines XP and Scrum methodologies.',
+                'Conducting regular <span class="fw-bold">1-on-1 meetings</span> focused on <span class="fw-bold">team and individual development, career growth, and performance</span>.',
+                'Leading <span class="fw-bold">interviewing and hiring</span> processes to expand the team, currently comprising <span class="fw-bold">6 engineers</span>.',
+                'Engaging in <span class="fw-bold">close collaboration with the Head of Engineering and Enterprise Architects</span> on technical and strategic initiatives.',
+                'Overseeing <span class="fw-bold">DORA metrics</span> to track and optimize team performance and engineering efficiency.',
+                'Partially handling <span class="fw-bold">project management tasks</span> to ensure smooth project execution.'
+            ],
+            technologies: [
+                "Typescript", "NestJS", "Mongoose", "Docker", "MySQL", "MongoDB",
+                "OpenAPI", "Vue.js v3", "SingleSPA", "Node.js", "Fastify",
+                "JavaScript", "CI/CD", "GitLab CI/CD", "DORA Metrics", "CypressJS",
+                "Jest", "SCSS", "HTML5", "XP+Scrum", "Agile", "Jira", "GitLab"
+            ]
+        },
+        {
+            id: 'remberg-sswe',
             title: 'Senior Software Engineer',
             employer: 'remberg GmbH, München, Germany',
-            year: 'January, 2022 - Present',
+            year: 'January, 2022 - December, 2023',
             bodyList: ['Engaging in technical discussions and contributing to architectural decision-making;',
                 ' Refactoring and improving code quality by rewriting backend features to NestJS and conducting code' +
                 ' reviews;',
@@ -49,6 +75,7 @@ const workExperience: content = {
             technologies: ['Typescript', 'NestJS', 'ExpressJs', 'Mongoose', 'Docker', 'NxJs', 'MongoDB', 'OpenAPI', 'Angular >=v14', 'NgRX', 'Angular Material UI', 'Jest', 'CypressJS', 'SCSS', 'Agile Development, Jira, Gitlab, Docker']
         },
         {
+            id: 'ryd-swe-lbe',
             title: 'Software Engineer - Lead Backend Engineer',
             employer: 'ThinxNet GmbH, München, Germany',
             year: 'June, 2019 - December, 2021',
@@ -67,6 +94,7 @@ const workExperience: content = {
                 'bash/lwc', 'HTML/SCSS/Vuejs', 'Agile Development, Jira, Gitlab, Docker']
         },
         {
+            id: 'travador-fwd',
             title: 'Fullstack Web Developer',
             employer: 'Travador GmbH, München, Germany',
             year: 'November, 2016 - May, 2019',
@@ -79,6 +107,7 @@ const workExperience: content = {
 
         },
         {
+            id: 'smal-wd',
             title: 'Web Developer',
             employer: 'SMAL GmbH(former Ziba Design), München, Germany',
             year: 'February, 2015 - October, 2016',
@@ -88,6 +117,7 @@ const workExperience: content = {
                 'PHP(cakephp)/MySQL/Drupal(frontend part)']
         },
         {
+            id: 'de-ro-wd',
             title: 'Web Developer',
             employer: 'Multiple Employers, Germany and Romania',
             year: 'April, 2012 - February, 2015',
@@ -116,23 +146,23 @@ const workExperience: content = {
         <div id="resume" class="d-flex px-1 py-5 justify-content-center section-height section col-12">
             <div class="d-flex flex-fill flex-column align-items-center g-5 py-5 col-sm-12">
                 <div class="col-lg-12">
-                    <p class="fs-1 mb-3 flex-fill text-warning fw-light text-center section-title">
+                    <p class="fs-1 mb-3 flex-fill text-warning fw-light text-center section-title d-print-none">
                         {t("resume.title")}
                     </p>
                 </div>
                 <div class="d-flex flex-column mb-3 justify-content-center align-items-center align-self-center col-12">
                     <div class="d-flex flex-column justify-content-center p-5 align-items-center align-self-center col-10">
-                        <p class="fs-3 mb-3 text-warning fw-light text-center vh-5 max-vh-5 min-vh-5">
+                        <p class="fs-3 mb-3 text-warning fw-light text-center vh-5 max-vh-5 min-vh-5 d-print-none">
                             {workExperience.title}
                             <br/>
-                            <a href={`/assets/resume-pdf/flavius_cojocariu_resume_${lang}.pdf`} target="_blank" class="fs-4 ms-2 text-warning">
+                            <a href="javascript: window.print();" class="fs-4 ms-2 text-warning d-print-none">
                                 {t('resume.download')}
                             </a>
                         </p>
                         <div class="fs-6 timeline-section d-flex flex-column">
                             {
-                                workExperience.sections.map((section) => (
-                                        <div class="timeline-item d-flex flex-column justify-content-around align-items-center">
+                                workExperience.sections.map((section: section) => (
+                                        <div class="timeline-item d-flex flex-column justify-content-around align-items-center" id={section.id}>
                                             <span class="fs-3">{section.title}</span>
                                             <span class="fs-4">{section.employer}</span>
                                             <span class="fs-4">{section.year}</span>
@@ -140,7 +170,7 @@ const workExperience: content = {
                                                 <ul>
                                                     {
                                                         section.bodyList?.map((item) => (
-                                                                <li>{item}</li>
+                                                                <li set:html={item}></li>
                                                         ))
                                                     }
                                                 </ul>
@@ -149,7 +179,7 @@ const workExperience: content = {
                                                 {t('resume.techUsed')}:
                                                 {
                                                     section.technologies?.map((item) => (
-                                                            <span class="badge bg-primary"> &nbsp;{item}&nbsp; </span>
+                                                            <span class="badge bg-secondary m-1 text-dark"> &nbsp;{item}&nbsp; </span>
                                                     ))
                                                 }
                                             </span>
@@ -166,13 +196,13 @@ const workExperience: content = {
                         </p>
                         <div class="fs-6 timeline-section d-flex flex-column">
                             {
-                                education.sections.map((section) => (
-                                        <div class="timeline-item d-flex flex-column justify-content-around align-items-center">
-                                            <span class="fs-3">{section.title}</span>
-                                            <span class="fs-4">{section.employer}</span>
-                                            <span class="fs-4">{section.year}</span>
+                                education.sections.map((edSection: section) => (
+                                        <div class="timeline-item d-flex flex-column justify-content-around align-items-center" id={edSection.id}>
+                                            <span class="fs-3">{edSection.title}</span>
+                                            <span class="fs-4">{edSection.employer}</span>
+                                            <span class="fs-4">{edSection.year}</span>
                                             <span class="timeline-item-body">
-                                                {section.body}
+                                                {edSection.body}
                                             </span>
                                         </div>
                                 ))
@@ -236,11 +266,6 @@ const workExperience: content = {
         min-height: 5vh;
     }
 
-    .badge.bg-primary {
-        background: #5b12a4 !important;
-        margin: 4px;
-    }
-
     @media screen and (min-width: 900px) {
 
         .timeline-section {
@@ -281,4 +306,6 @@ const workExperience: content = {
             background: #ff8900;
         }
     }
+
+
 </style>
