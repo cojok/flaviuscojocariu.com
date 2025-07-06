@@ -24,6 +24,10 @@ const menuItems = [
         title: t('nav.resume'),
         path: path('/resume'),
     },
+    {
+        title: t('nav.impressum'),
+        path: path('/impressum'),
+    },
 ];
 const {defaultActiveItem} = Astro.props;
 ---
@@ -45,7 +49,8 @@ const {defaultActiveItem} = Astro.props;
                             <li class="nav-item">
                                 <a class:list={['nav-link', {
                                     'text-light': defaultActiveItem !== item.title,
-                                    'active text-warning': defaultActiveItem === item.title
+                                    'active text-warning': defaultActiveItem === item.title,
+                                    'hidden': item.title === 'Impressum'
                                 }]} aria-current="page" href={item.path} data-path={item.path}>
                                     {item.title}
                                 </a>

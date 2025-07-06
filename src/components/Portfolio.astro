@@ -13,15 +13,6 @@ type portfolioContent = {
     tags?: string[];
 }
 const projectsList: portfolioContent[] = t('projects.list') as portfolioContent[];
-const projects: portfolioContent[] = [
-    {
-        href: '//github.com/cojok/personal-website',
-        title: 'Engineering Manager | IU Group, Munich, Germany (Jan 2024 - Present)',
-        body: '<span class="fw-bold">Lead</span> a team of <span class="fw-bold">6 engineers</span> with a focus on <span class="fw-bold">code reviews</span>, <span class="fw-bold">small development tasks</span>, and <span class="fw-bold">pair programming</span> for configuration support. Oversee <span class="fw-bold">collaboration across clusters</span> and engage in <span class="fw-bold">strategic planning</span> with the Product Owner team, implementing <span class="fw-bold">OKR-driven processes</span>. <span class="fw-bold">Restructure team workflows</span> by introducing a sprint process combining <span class="fw-bold">XP and Scrum</span>. Conduct <span class="fw-bold">1-on-1 meetings</span> for team development, handle <span class="fw-bold">hiring and onboarding</span>, and monitor <span class="fw-bold">DORA metrics</span> to enhance performance. Work closely with the <span class="fw-bold">Head of Engineering</span> on strategic and technical projects.',
-        tags: ["TypeScript", "NestJS", "Mongoose", "Docker", "MySQL", "MongoDB", "Vue.js v3", "Node.js", "CI/CD", "GitLab CI/CD", "DORA Metrics", "Agile"]
-    },
-    ...projectsList,
-]
 ---
 
 <section id="projects" class="d-flex col-xxl-12 px-1 py-5 justify-content-center section-height mb-5">
@@ -38,7 +29,7 @@ const projects: portfolioContent[] = [
             <div class="fs-5 mb-2 flex-fill text-light fw-light text-left">
                 <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5 flex-wrap">
                     {
-                        projects.map((project) => (
+                        projectsList.map((project) => (
                                 <Card
                                         bgImg={project.bgImg}
                                         href={project.href}

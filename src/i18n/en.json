@@ -4,6 +4,7 @@
   "nav.projects": "Projects",
   "nav.contact": "Contact",
   "nav.resume": "Resume",
+  "nav.impressum": "Impressum",
   "main": "Hi, I’m ${name}, Engineering Manager and Web Developer based in Munich.",
   "main.tagline": "Building Teams, Crafting Solutions",
   "about.title": "About me",
@@ -150,5 +151,7 @@
   "footer.poweredBy": "Powered by",
   "resume.download": "Download Resume in pdf",
   "resume.title": "Resume",
-  "resume.techUsed": "Technologies used"
+  "resume.techUsed": "Technologies used",
+  "impressum.title": "Impressum",
+  "gdpr.title": "Datenschutzerklärung"
 }
