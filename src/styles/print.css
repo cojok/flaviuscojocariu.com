@@ -1,63 +1,151 @@
-body {
-    font-family: 'Fira Sans', sans-serif !important;
-    background-color: #242a37 !important;
-    color: #f1f2f6 !important;
+/* Print stylesheet — clean black-on-white resume output */
+
+* {
+    background: white !important;
+    color: black !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+    border-color: #ccc !important;
 }
 
-nav {
+body {
+    font-family: 'Fira Sans', Arial, sans-serif !important;
+    font-size: 11pt !important;
+    line-height: 1.4 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+/* Hide navigation, footer, contact button, print button */
+nav,
+footer,
+.d-print-none,
+.btn,
+a[href="javascript:window.print();"],
+a[href="javascript: window.print();"] {
     display: none !important;
 }
 
+/* Container full width */
 .container {
     max-width: 100% !important;
+    padding: 0 20px !important;
 }
 
+/* Section height reset — no forced viewport heights */
+.section-height {
+    min-height: auto !important;
+}
+
+/* Resume section */
+#resume {
+    padding: 0 !important;
+}
+
+/* Timeline section — remove border and decorations */
 .timeline-section {
+    border-left: none !important;
+    padding-left: 0 !important;
     display: flex !important;
     flex-direction: column !important;
-    gap: 24px !important;
+    gap: 16px !important;
+    width: 100% !important;
 }
 
+/* Timeline items — remove borders, decorations, reset layout */
 .timeline-item {
+    border: none !important;
+    padding: 8px 0 !important;
+    margin: 0 !important;
+    width: 100% !important;
+    min-width: 100% !important;
+    page-break-inside: avoid !important;
     display: flex !important;
-    align-content: flex-start !important;
+    flex-direction: column !important;
     align-items: flex-start !important;
-    flex-direction: column !important;
-    justify-content: space-between !important;
-    padding: 8px !important;
 }
 
-.timeline-item-header {
-    display: flex !important;
-    flex-direction: column !important;
-    gap: 8px !important;
-    margin-bottom: 16px !important;
-}
-
-.timeline-item-header .title {
-    font-size: 1.5rem !important;
-    font-weight: 500 !important;
-    color: #ffcc00 !important;
-}
-
-.timeline-item-header .subtitle {
-    font-size: 1.25rem !important;
-    font-weight: 400 !important;
-    color: #f1f2f6 !important;
-}
-
-.timeline-item-header .date {
-    font-size: 1.25rem !important;
-    font-weight: 400 !important;
-    color: #f1f2f6 !important;
-}
-
-.timeline-item-body {
-    font-size: 1rem !important;
-    line-height: 1.5 !important;
-    color: #f1f2f6 !important;
-}
-
-.d-print-none {
+/* Remove timeline dots and connector lines */
+.timeline-section .timeline-item::before,
+.timeline-section .timeline-item::after {
     display: none !important;
+    content: none !important;
+}
+
+/* Section title underline — remove gold bar */
+.section-title::after {
+    display: none !important;
+    content: none !important;
+}
+
+/* Typography */
+.timeline-item .fs-3 {
+    font-size: 14pt !important;
+    font-weight: bold !important;
+    margin-bottom: 2px !important;
+}
+
+.timeline-item .fs-4 {
+    font-size: 11pt !important;
+    margin-bottom: 2px !important;
+}
+
+.timeline-item-body,
+.timeline-item-body ul > li {
+    font-size: 10pt !important;
+    line-height: 1.4 !important;
+    padding: 2px 0 !important;
+}
+
+.timeline-item-body ul {
+    margin: 4px 0 !important;
+    padding-left: 20px !important;
+}
+
+/* Tech badges — inline plain text */
+.badge {
+    background: transparent !important;
+    color: black !important;
+    border: 1px solid #999 !important;
+    border-radius: 3px !important;
+    font-size: 9pt !important;
+    padding: 1px 4px !important;
+    margin: 1px !important;
+    display: inline !important;
+}
+
+/* Section headers */
+.text-warning,
+.text-danger,
+.text-light,
+.text-dark,
+.text-gradient {
+    color: black !important;
+    background: none !important;
+    -webkit-text-fill-color: black !important;
+}
+
+.fs-1 {
+    font-size: 18pt !important;
+    font-weight: bold !important;
+}
+
+.fs-3 {
+    font-size: 14pt !important;
+}
+
+/* Links — no underline, black text */
+a {
+    color: black !important;
+    text-decoration: none !important;
+}
+
+/* Page breaks */
+.timeline-item {
+    page-break-inside: avoid !important;
+}
+
+/* Margins for print */
+@page {
+    margin: 15mm;
 }
