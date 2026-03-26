@@ -16,39 +16,39 @@
   "about.paragraph5": "I’m always open to conversations about engineering leadership, platform architecture, or potential collaborations.",
   "about.letCreate": "Let’s build something that lasts.",
   "services.title": "Services",
-  "services.frontend.title": "Frontend Development",
-  "services.frontend.description": "Creating scalable, responsive, and user-centered interfaces for web applications",
+  "services.frontend.title": "Platform Engineering",
+  "services.frontend.description": "Designing and delivering scalable platform architectures for growing organizations.",
   "services.frontend.content": [
-    "<span class=\"fw-bold\">UI/UX Implementation</span>: Engaging and functional user interfaces.",
-    "<span class=\"fw-bold\">Architecture Definition</span>: Structuring for scalability and maintainability.",
-    "<span class=\"fw-bold\">Component-Based Development</span>: Reusable components and microfrontends.",
-    "<span class=\"fw-bold\">Core Technology</span>: TypeScript for clean, efficient code."
+    "<span class=\"fw-bold\">Platform Modernization</span>: Migrating legacy systems to modern, maintainable architectures.",
+    "<span class=\"fw-bold\">Microservices & Monorepo Strategy</span>: Structuring codebases for team autonomy and delivery speed.",
+    "<span class=\"fw-bold\">Developer Experience</span>: CI/CD, observability, and tooling that makes teams faster.",
+    "<span class=\"fw-bold\">Core Stack</span>: TypeScript, NestJS, Vue.js, Kafka, Docker, AWS."
   ],
-  "services.backend.title": "Backend development",
-  "service.backend.description": "Building robust, scalable backend architectures tailored for business growth.",
+  "services.backend.title": "Engineering Leadership",
+  "service.backend.description": "Building and scaling high-performing engineering teams aligned with business goals.",
   "services.backend.content": [
-    "<span class=\"fw-bold\">API Design & Implementation</span>: Crafting RESTful APIs for seamless communication.",
-    "<span class=\"fw-bold\">Microservices Architecture</span>: Modular systems that scale easily.",
-    "<span class=\"fw-bold\">Event-Driven Systems</span>: Real-time data processing for responsive applications.",
-    "<span class=\"fw-bold\">Data Management</span>: SQL/NoSQL for secure, efficient data handling.",
-   "<span class=\"fw-bold\">CI/CD & System Design</span>: Streamlining deployments and ensuring fast, reliable releases."
+    "<span class=\"fw-bold\">Team Building</span>: Hiring, onboarding, and developing engineers from junior to senior.",
+    "<span class=\"fw-bold\">Org Design</span>: Structuring teams for ownership, velocity, and cross-functional collaboration.",
+    "<span class=\"fw-bold\">Process & Delivery</span>: OKRs, DORA metrics, sprint design, and delivery accountability.",
+    "<span class=\"fw-bold\">Change Management</span>: Leading teams through re-orgs, migrations, and cultural shifts.",
+    "<span class=\"fw-bold\">Stakeholder Alignment</span>: Bridging engineering, product, and business leadership."
   ],
   "services.consultancy.title": "Consulting",
-  "services.consultancy.description": "Expert guidance on digital transformation, team growth, and product strategies.",
+  "services.consultancy.description": "Hands-on advisory for companies navigating platform transitions and engineering growth.",
   "services.consultancy.content": [
-    "<span class=\"fw-bold\">Digital Transformation</span>: Helping companies adopt digital solutions effectively.",
-    "<span class=\"fw-bold\">Team Leadership & Development</span>: Leveraging experience in building high-performing teams.",
-    "<span class=\"fw-bold\">Product Strategy & Growth</span>: Aligning technical direction with business objectives.",
-    "<span class=\"fw-bold\">Industry Insight</span>: Specialized knowledge across SaaS, e-commerce, edtech, IoT, and fintech."
+    "<span class=\"fw-bold\">Platform Architecture Review</span>: Assessing and redesigning system architectures for scale.",
+    "<span class=\"fw-bold\">Engineering Team Assessment</span>: Evaluating team structure, processes, and delivery health.",
+    "<span class=\"fw-bold\">Distributed Systems Design</span>: Event-driven architecture, data flow design, and API strategy.",
+    "<span class=\"fw-bold\">Mittelstand & Scale-up Focus</span>: Practical, no-nonsense guidance for companies that build real products."
   ],
   "projects.title": "Portfolio Highlights",
   "projects.description": "In my portfolio highlights, you’ll find a curated selection of key projects that showcase my ability to develop dynamic, user-centered web applications. Each project demonstrates my commitment to excellence, combining creativity with advanced technologies. For an in-depth look at my work and experience, explore the full details on my resume.",
   "projects.list": [
     {
       "href": "/resume#iu-group-em",
-      "title": "Engineering Manager | IU Group, Munich, Germany (Jan 2024 - Present)",
-      "body": "<span class=\"fw-bold\">Lead</span> a team of <span class=\"fw-bold\">6 engineers</span> with a focus on <span class=\"fw-bold\">code reviews</span>, <span class=\"fw-bold\">small development tasks</span>, and <span class=\"fw-bold\">pair programming</span> for configuration support. Oversee <span class=\"fw-bold\">collaboration across clusters</span> and engage in <span class=\"fw-bold\">strategic planning</span> with the Product Owner team, implementing <span class=\"fw-bold\">OKR-driven processes</span>. <span class=\"fw-bold\">Restructure team workflows</span> by introducing a sprint process combining <span class=\"fw-bold\">XP and Scrum</span>. Conduct <span class=\"fw-bold\">1-on-1 meetings</span> for team development, handle <span class=\"fw-bold\">hiring and onboarding</span>, and monitor <span class=\"fw-bold\">DORA metrics</span> to enhance performance. Work closely with the <span class=\"fw-bold\">Head of Engineering</span> on strategic and technical projects.",
-      "tags": ["TypeScript", "NestJS", "Mongoose", "Docker", "MySQL", "MongoDB", "Vue.js v3", "Node.js", "CI/CD", "GitLab CI/CD", "DORA Metrics", "Agile"]
+      "title": "Senior Engineering Manager (Platform Ownership) | IU Group, Munich, Germany (Jan 2024 - Present)",
+      "body": "<span class=\"fw-bold\">Lead two engineering teams</span> (7 engineers) responsible for IU's <span class=\"fw-bold\">learning, student, and on-campus exam platforms</span>, serving <span class=\"fw-bold\">100,000+ students</span> across MyCampus Classic (Moodle) and MyCampus 2.0 with <span class=\"fw-bold\">full dual technical ownership</span>. Drive <span class=\"fw-bold\">cross-team service unification</span> and co-design <span class=\"fw-bold\">data flow architecture</span> with peer Heads of Engineering. Selected for the <span class=\"fw-bold\">cross-company data unification task force</span> alongside HoEs and Directors. Introduced <span class=\"fw-bold\">observability and DORA-aligned metrics</span>, rebuilt team structure through <span class=\"fw-bold\">change management and coaching</span>.",
+      "tags": ["TypeScript", "NestJS", "Vue 3", "Moodle 4", "Docker", "GitLab CI/CD", "Kafka", "Node.js", "Fastify", "OpenAPI", "K6", "DORA Metrics", "OKRs"]
     },
     {
       "href": "/resume#remberg-sswe",
