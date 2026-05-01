@@ -4,7 +4,7 @@
   "nav.projects": "Projekte",
   "nav.contact": "Kontakt",
   "nav.resume": "Lebenslauf",
-  "main": "Hallo, ich bin ${name}, in Engineering Leader aus München - Platform Ownership, verteilte Systeme, Teams im Wachstum.",
+  "main": "Hallo, ich bin ${name}, ein Engineering Leader aus München - Platform Ownership, verteilte Systeme, Teams im Wachstum.",
   "main.tagline": "Teams führen. Plattformen modernisieren. Engineering Excellence ermöglichen.",
   "about.title": "Über mich",
   "about.helloThere": "Hallo zusammen!",
@@ -40,7 +40,7 @@
     "<span class=\"fw-bold\">Verteilte Systeme</span>: Event-Driven Architecture, Datenfluss-Design und API-Strategie.",
     "<span class=\"fw-bold\">Mittelstand & Scale-up Fokus</span>: Praktische, lösungsorientierte Beratung für Unternehmen, die echte Produkte bauen."
   ],
-  "projects.title": "Projects",
+  "projects.title": "Projekte",
   "projects.description": "In meinem Portfolio finden Sie eine Auswahl meiner besten Arbeiten, die meine Fähigkeit unter Beweis stellen, dynamische und benutzerfreundliche Webanwendungen zu entwickeln, die Kreativität und modernste Technologien nahtlos miteinander verbinden. Jedes Projekt spiegelt mein Engagement für hervorragende Leistungen und mein Auge für Details wider.",
   "projects.list": [
     {
@@ -118,6 +118,6 @@
   "footer.madeBy": "Made with ${icon} by Flavius Cojocariu",
   "footer.poweredBy": "Powered by",
   "resume.download": "Lebenslauf herunterladen",
-  "resume.title": "Lenbenslauf",
+  "resume.title": "Lebenslauf",
   "resume.techUsed": "Verwendete Technologien"
 }
