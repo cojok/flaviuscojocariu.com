@@ -4,11 +4,11 @@
   "nav.projects": "Projekte",
   "nav.contact": "Kontakt",
   "nav.resume": "Lebenslauf",
-  "main": "Hallo, ich bin ${name}, Senior Engineering Manager und Plattform-Architekt aus München.",
+  "main": "Hallo, ich bin ${name}, in Engineering Leader aus München - Platform Ownership, verteilte Systeme, Teams im Wachstum.",
   "main.tagline": "Teams führen. Plattformen modernisieren. Engineering Excellence ermöglichen.",
   "about.title": "Über mich",
   "about.helloThere": "Hallo zusammen!",
-  "about.paragraph1": "Ich bin Flavius Cojocariu, Senior Engineering Manager in München. Ich leite zwei Plattform-Teams bei der IU Group — Deutschlands größter Universität — und verantworte die technische Ausrichtung von Studierendenplattformen mit über 100.000 Nutzern. Meine Arbeit umfasst Plattformarchitektur, Teamaufbau und Engineering-Strategie.",
+  "about.paragraph1": "Ich bin Flavius Cojocariu, Engineering Leader in München. Ich leite zwei Plattform-Teams bei der IU Group — Deutschlands größter Universität — und verantworte die technische Ausrichtung von Studierendenplattformen mit über 100.000 Nutzern. Meine Arbeit umfasst Plattformarchitektur, Teamaufbau und Engineering-Strategie.",
   "about.paragraph2": "Mit über 13 Jahren Erfahrung in der Softwareentwicklung und mehr als 5 Jahren in Engineering Leadership habe ich Teams von Grund auf aufgebaut, Monolith-zu-Microservices-Migrationen vorangetrieben, Observability und DORA-orientierte Praktiken eingeführt und Datenarchitekturen über Organisationsgrenzen hinweg gestaltet. Ich arbeite an der Schnittstelle von technischer Tiefe und organisatorischer Führung.",
   "about.paragraph3": "Ich arbeite gemeinsam mit Heads of Engineering und Directors an unternehmensweiter Datenstrategie und wurde für Task Forces ausgewählt, die gestalten, wie Daten über Pre-Sales, Sales und Post-Sales fließen. Meine Peer Group sind HoEs und Directors — ich trage zu quartalsweisen Alignment-Meetings bei, die plattformübergreifende Strategie, Teamstruktur und Organisationsplanung betreffen.",
   "about.paragraph4": "Neben meiner Festanstellung unterstütze ich wachsende Tech-Unternehmen bei der Modernisierung ihrer Plattformarchitektur und der Skalierung ihrer Engineering-Teams. Wenn Sie ein Mittelstandsunternehmen oder Scale-up sind, das vor einer Plattform-Transition, einer Team-Skalierung oder einer Architekturentscheidung steht — ich kann helfen.",
@@ -46,8 +46,8 @@
     {
       "href": "/de/resume#iu-group-em",
       "title": "Senior Engineering Manager (Platform Ownership) | IU Group, München (Jan 2024 - heute)",
-      "body": "<span class=\"fw-bold\">Leitung von zwei Engineering-Teams</span> (7 Entwickler), verantwortlich für die <span class=\"fw-bold\">Lern-, Studierenden- und Prüfungsplattformen</span> der IU mit <span class=\"fw-bold\">100.000+ Studierenden</span> auf MyCampus Classic (Moodle) und MyCampus 2.0 mit <span class=\"fw-bold\">vollständiger dualer technischer Verantwortung</span>. Vorantreiben der <span class=\"fw-bold\">teamübergreifenden Service-Vereinheitlichung</span> und Mitgestaltung der <span class=\"fw-bold\">Datenfluss-Architektur</span> mit Peer-HoEs. Ausgewählt für die <span class=\"fw-bold\">unternehmensweite Task Force zur Datenvereinheitlichung</span>. Einführung von <span class=\"fw-bold\">Observability und DORA-orientierten Metriken</span>, Neuaufbau der Teamstruktur durch <span class=\"fw-bold\">Change Management und Coaching</span>.",
-      "tags": ["TypeScript", "NestJS", "Vue 3", "Moodle 4", "Docker", "GitLab CI/CD", "Kafka", "Node.js", "Fastify", "OpenAPI", "K6", "DORA Metrics", "OKRs"]
+      "body": "Leitung von <span class=\"fw-bold\">zwei Engineering-Teams</span> mit <span class=\"fw-bold\">vollständiger dualer Ownership</span> über MyCampus Classic (Moodle) und MyCampus 2.0, für über <span class=\"fw-bold\">100.000 Studierende</span> an Deutschlands größter Universität. Erste <span class=\"fw-bold\">zero-downtime, zero-incident Haupteinschreibung</span> seit über 8 Jahren (Oktober 2025). <span class=\"fw-bold\">15+ Repos</span> in ein NestJS-Monorepo konsolidiert, Wartungsaufwand um <span class=\"fw-bold\">~45%</span> reduziert. <span class=\"fw-bold\">Zero Fluktuation</span> durch <span class=\"fw-bold\">3 Reorgs</span>. Ausgewählt für die <span class=\"fw-bold\">unternehmensweite Datenvereinheitlichungs-Taskforce</span> neben HoEs und Directors.",
+      "tags": ["TypeScript", "NestJS", "Vue 3", "PHP", "Moodle 4", "Docker", "GitLab CI/CD", "Kafka", "Node.js", "Fastify", "OpenAPI", "K6", "DORA Metrics", "OKRs"]
     },
     {
       "href": "/de/resume#remberg-sswe",
@@ -90,52 +90,21 @@
       ]
     },
     {
-      "href": "/de/resume#travador-fwd",
-      "title": "Fullstack Web Developer | Travador GmbH, Munich, Germany (Nov 2016 - May 2019)",
-      "body": "Arbeitete mit Design-Teams zusammen, um neue Funktionen und UI-Komponenten zu entwickeln, führte tägliche Wartung und Refaktorierung durch und leitete die Planung von Verbesserungen für die <span class=\"fw-bold\">Buchungsplattform und Website</span>. Leistete einen Beitrag zur Full-Stack-Entwicklung von Microservices.",
-      "tags": [
-        "HTML5(Twig, EJS)",
-        "CSS3 (SCSS)",
-        "JavaScript (ES6, Vue.js, jQuery, AngularJS, Node.js)",
-        "CakePHP",
-        "Laravel",
-        "Lumen",
-        "MySQL",
-        "AWS (Lambda, S3, CloudFront)",
-        "Agile",
-        "Git"
-      ]
-    },
-    {
-      "href": "/de/resume#smal-wd",
-      "title": "Web Developer | SMAL GmbH (formerly Ziba Design), Munich, Germany (Feb 2015 - Oct 2016)",
-      "body": "Entwickelte responsive Prototypen und Webanwendungen und nahm an <span class=\"fw-bold\">Kundenplanungssitzungen und technischen Diskussionen</span> teil, um sicherzustellen, dass die Projektziele erreicht werden. Sicherte eine hohe Codequalität durch gründliche Code-Reviews.",
-      "tags": [
-        "HTML5",
-        "CSS3 (LESS/SASS)",
-        "JavaScript",
-        "jQuery",
-        "AngularJS",
-        "PHP (CakePHP)",
-        "MySQL",
-        "Drupal (frontend)"
-      ]
-    },
-    {
-      "href": "/de/resume#de-ro-wd",
-      "title": "Web Developer | Multiple Employers, Germany & Romania (April 2012 - February 2015)",
-      "body": "Arbeitete an verschiedenen Projekten in unterschiedlichen Branchen und konzentrierte sich auf <span class=\"fw-bold\">White-Label-Produktimplementierungen, responsives Webdesign und hybride mobile Anwendungen</span>. Zu den Highlights zählen die Erstellung einer Wissensdatenbank für Code-Snippets, die Modernisierung von Online-Fragebögen und das Unterrichten von HTML/CSS-Grundlagen für Teammitglieder.\n",
+      "href": "/de/resume#early-wd",
+      "title": "Frühere Karriere | Verschiedene Unternehmen, München & Rumänien (2012 - 2019)",
+      "body": "<span class=\"fw-bold\">Fullstack- und Backend-Entwicklung</span> in <span class=\"fw-bold\">Buchungsplattformen</span>, Agenturen und Produktunternehmen in München und Rumänien. Stack: <span class=\"fw-bold\">PHP, JavaScript, Vue.js, Laravel, MySQL, AWS</span>. Grundlage für die spätere <span class=\"fw-bold\">Platform-Engineering-Arbeit</span>.",
       "tags": [
         "PHP",
-        "MySQL",
         "JavaScript",
+        "Vue.js",
+        "Laravel",
+        "MySQL",
+        "AWS",
         "jQuery",
-        "HTML",
-        "CSS3",
-        "Ionic",
-        "SASS",
-        "Bootstrap",
-        "Git"
+        "AngularJS",
+        "Node.js",
+        "HTML5",
+        "CSS3"
       ]
     }
   ],
